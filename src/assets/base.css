@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #ffffff;
+    --color-bg-soft: #f4f4f5;
+    --color-text: #1a1a1a;
+    --color-text-soft: #555555;
+    --color-accent: #2563eb;
+    --color-accent-hover: #1d4ed8;
+    --color-border: #e2e2e2;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;   /* esto te faltaba */
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;   /* nunca crece más allá de esto, sin importar el ancho de pantalla */
+    margin: 0 auto;       /* el auto en los lados izq/der centra el bloque */
+    padding: 0 1.5rem;    /* respiro interno, para que en pantallas angostas no toque los bordes */
+}
