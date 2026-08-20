@@ -9,6 +9,11 @@ const router = createRouter({
         name: 'home',
         component: HomeView
     },
+    {
+      path: '/proyectos/:slug',
+      name: 'project-detail',
+      component: () => import('../views/ProjectDetailView.vue'),
+    },
   ],
 });
 

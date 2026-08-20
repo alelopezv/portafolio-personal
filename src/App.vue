@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { useLanguageStore } from '@/stores/language'
+import { useThemeStore } from '@/stores/theme'
+import { Sun, Moon } from 'lucide-vue-next'
+
 const languageStore = useLanguageStore()
+const themeStore = useThemeStore()
 
 const navItems = [
   { href: '#about', es: 'Sobre mí', en: 'About me' },
@@ -19,9 +23,15 @@ const navItems = [
           </li>
         </ul>
       </nav>
-      <button @click="languageStore.toggleLocale()">
-        {{ languageStore.locale === 'es' ? 'en' : 'es' }}
-      </button>
+      <div class="toggles">
+        <button @click="languageStore.toggleLocale()">
+          {{ languageStore.locale === 'es' ? 'en' : 'es' }}
+        </button>
+        <button @click="themeStore.toggleTheme()">
+          <Sun v-if="themeStore.theme === 'dark'" :size="18" />
+          <Moon v-else :size="18" />
+        </button>
+      </div>
     </div>
   </header>
   <RouterView></RouterView>
@@ -50,5 +60,27 @@ const navItems = [
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .toggles { 
+    display: flex; 
+    gap: 0.5rem; 
+  }
+
+  .toggles button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg-soft);
+    color: var(--color-text);
+    border-radius: 999px;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .toggles button:hover {
+    background-color: var(--color-border);
   }
 </style>
