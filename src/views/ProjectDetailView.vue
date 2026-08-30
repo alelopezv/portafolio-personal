@@ -32,9 +32,9 @@ function prevImage() {
         <img :src="project.images[currentIndex]" :alt="`${project.title} ${currentIndex + 1}`" />
       </div>
       <div class="carousel-controls">
-        <button @click="prevImage" class="carousel-btn">‹</button>
+        <button @click="prevImage" class="carousel-btn" aria-label="Imagen anterior">‹</button>
         <span class="carousel-indicator">{{ currentIndex + 1 }} / {{ project.images.length }}</span>
-        <button @click="nextImage" class="carousel-btn">›</button>
+        <button @click="nextImage" class="carousel-btn" aria-label="Imagen siguiente">›</button>
       </div>
     </div>
 

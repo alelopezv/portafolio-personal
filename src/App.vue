@@ -43,15 +43,15 @@ const navItems = [
 
       <div class="header-actions">
         <div class="toggles">
-          <button @click="languageStore.toggleLocale()">
+          <button @click="languageStore.toggleLocale()" aria-label="Cambiar idioma">
             {{ languageStore.locale === 'es' ? 'en' : 'es' }}
           </button>
-          <button @click="themeStore.toggleTheme()">
+          <button @click="themeStore.toggleTheme()" aria-label="Cambiar tema">
             <Sun v-if="themeStore.theme === 'dark'" :size="18" />
             <Moon v-else :size="18" />
           </button>
         </div>
-        <button class="menu-btn" @click="isMenuOpen = !isMenuOpen">
+        <button class="menu-btn" @click="isMenuOpen = !isMenuOpen" aria-label="Abrir menú de navegación">
           <Menu v-if="!isMenuOpen" :size="22" />
           <X v-else :size="22" />
         </button>

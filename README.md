@@ -1,42 +1,53 @@
-# portafolio-personal
+# Portafolio Personal — Alejandro López
 
-This template should help get you started developing with Vue 3 in Vite.
+Portafolio bilingüe (ES/EN) construido con Vue 3, TypeScript y Vite, con modo claro/oscuro, rutas dinámicas por proyecto y despliegue continuo en Vercel.
 
-## Recommended IDE Setup
+🔗 **Sitio en vivo:** https://portafolio-personal-seven-pi.vercel.app
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Características
 
-## Recommended Browser Setup
+- 🌗 Modo claro / oscuro con persistencia de preferencia mediante Pinia
+- 🌐 Contenido bilingüe (español / inglés) en toda la interfaz
+- 🖼️ Galería de imágenes con carrusel por proyecto
+- 🧭 Rutas dinámicas (`/proyectos/:slug`) para el detalle de cada proyecto
+- 📱 Diseño responsive con menú hamburguesa en mobile
+- ✨ Animaciones de aparición al hacer scroll (Intersection Observer)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Stack técnico
 
-## Type Support for `.vue` Imports in TS
+- **Framework:** Vue 3 (Composition API + `<script setup>`)
+- **Lenguaje:** TypeScript
+- **Build tool:** Vite
+- **Estado:** Pinia
+- **Routing:** Vue Router
+- **Estilos:** CSS con variables personalizadas (sin frameworks de CSS)
+- **Iconos:** lucide-vue-next
+- **Despliegue:** Vercel (CI/CD automático desde GitHub)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Estructura del proyecto
+src/
+├── components/ # Secciones reutilizables (About, Projects, Work, Education, Footer)
+├── views/ # Vistas de ruta (Home, ProjectDetail)
+├── stores/ # Estado global con Pinia (idioma, tema)
+├── data/ # Datos de proyectos y experiencia laboral (tipados con TypeScript)
+├── router/ # Configuración de Vue Router
+└── assets/ # CSS global y variables de tema
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Desarrollo local
 
-## Project Setup
-
-```sh
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Build de producción
 
-```sh
+```bash
 npm run build
 ```
+
+## Autor
+
+**Alejandro López** — Frontend Developer (Vue.js) en transición a Full Stack (Python/Django)
+[LinkedIn](https://linkedin.com/in/alelopezv) · [GitHub](https://github.com/alelopezv)
