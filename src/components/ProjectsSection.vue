@@ -17,7 +17,6 @@ onMounted(() => {
 })
 
 const languageStore = useLanguageStore()
-
 </script>
 
 <template>
@@ -26,9 +25,11 @@ const languageStore = useLanguageStore()
     <div class="projects-grid">
       <div class="project-card" v-for="project in projects" :key="project.title">
         <h3>{{ project.title }}</h3>
-        <img :src="project.image" :alt="project.title">
-        <p>{{ project.description[languageStore.locale] }}</p>
-        <p>{{ project.technologies.join(', ') }}</p>
+        <img :src="project.images[0]" :alt="project.title">
+        <p class="card-description">{{ project.description[languageStore.locale] }}</p>
+        <div class="card-tags">
+          <span v-for="tech in project.technologies" :key="tech" class="tag">{{ tech }}</span>
+        </div>
         <RouterLink :to="{ name: 'project-detail', params: { slug: project.slug } }" class="card-link">
           {{ languageStore.locale === 'es' ? 'Ver más' : 'View more' }}
         </RouterLink>
@@ -52,6 +53,8 @@ const languageStore = useLanguageStore()
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.3s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card.is-visible {
@@ -62,6 +65,10 @@ const languageStore = useLanguageStore()
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-link:visited {
+  color: var(--color-accent);
 }
 
 .project-card img {
@@ -83,6 +90,29 @@ const languageStore = useLanguageStore()
 .card-link {
   display: block;
   padding: 0 1rem 1rem;
-  margin-top: 0.5rem;
+  margin-top: auto;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0 1rem 1rem;
+}
+
+.card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tag {
+  background-color: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.75rem;
 }
 </style>
