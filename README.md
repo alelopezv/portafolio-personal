@@ -49,5 +49,5 @@ npm run build
 
 ## Autor
 
-**Alejandro López** — Frontend Developer (Vue.js) en transición a Full Stack (Python/Django)
+**Alejandro López** — Frontend Developer (Vue.js) ampliando hacia Full Stack (Python/Django)
 [LinkedIn](https://linkedin.com/in/alelopezv) · [GitHub](https://github.com/alelopezv)

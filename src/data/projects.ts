@@ -44,9 +44,9 @@ export const projects: Project[] = [
     slug: 'echoreviews',
     images: ['/projects/echoreviews-1.png', '/projects/echoreviews-2.png'],
     description: {
-      es: 'Aplicación Full Stack desacoplada para la gestión de reseñas culturales sobre anime, música y videojuegos, desarrollada con una API REST y autenticación JWT.',
-      en: 'Decoupled full stack app for managing cultural reviews on anime, music, and video games, built with a REST API and JWT authentication.',
+      es: 'Aplicación Full Stack desacoplada para reseñas culturales de anime, música y videojuegos, con autenticación JWT, un flujo de moderación donde el administrador aprueba o rechaza contenido sin poder editarlo, y una API REST cubierta por 65 pruebas automatizadas verificadas con pruebas de mutación; desplegada con Docker Compose (nginx, Django, MySQL).',
+      en: 'Decoupled full stack app for cultural reviews on anime, music, and video games, with JWT authentication, a moderation workflow where the admin approves or rejects content without being able to edit it, and a REST API covered by 65 automated tests verified with mutation testing; deployed with Docker Compose (nginx, Django, MySQL).',
     },
-    technologies: ['Python', 'Django', 'Django REST Framework', 'JWT', 'MySQL', 'Docker', 'React.js'],
+    technologies: ['Python', 'Django', 'Django REST Framework', 'JWT', 'MySQL', 'Docker', 'React.js', 'TypeScript', 'Tailwind CSS'],
   },
 ]
