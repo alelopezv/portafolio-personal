@@ -9,24 +9,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Parque Arauco — Parque Alegra',
-    slug: 'parque-arauco',
-    images: ['/projects/parquearauco-1.png', '/projects/parquearauco-2.png', '/projects/parquearauco-3.png', '/projects/parquearauco-4.png', '/projects/parquearauco-5.png', '/projects/parquearauco-6.png', '/projects/parquearauco-7.png', '/projects/parquearauco-8.png', '/projects/parquearauco-9.png'],
+    title: 'EchoReviews',
+    slug: 'echoreviews',
+    images: ['/projects/echoreviews-1.png', '/projects/echoreviews-2.png'],
     description: {
-      es: 'Desarrollo y mantención frontend de múltiples sitios del ecosistema Parque Arauco en Chile y Colombia — incluyendo Parque Alegra, Parque Arboleda y otros — implementando módulos dinámicos, componentes reutilizables para reemplazo de contenido, y administración de contenido mediante Modyo CMS. Contribución realizada como parte del equipo, mediante tickets Jira bajo metodología Scrum, a través de VASS Company.',
-      en: 'Frontend development and maintenance of multiple sites within the Parque Arauco ecosystem in Chile and Colombia — including Parque Alegra, Parque Arboleda, and others — implementing dynamic modules, reusable components for content replacement, and content management through the Modyo CMS. Contribution made as part of the team, through Jira tickets under Scrum methodology, via VASS Company.',
+      es: 'Aplicación Full Stack desacoplada para reseñas de anime, videojuegos y música de culto —contenido de nicho, pensado para quienes buscan algo más allá del gusto masivo—. Incluye autenticación JWT, un flujo de moderación donde el administrador aprueba o rechaza contenido sin poder editarlo, y una API REST desplegada con Docker Compose (nginx, Django, MySQL).',
+      en: 'Decoupled full stack app for cult anime, video game, and music reviews —niche content, for people looking for something beyond mainstream taste—. Includes JWT authentication, a moderation workflow where the admin approves or rejects content without being able to edit it, and a REST API deployed with Docker Compose (nginx, Django, MySQL).',
     },
-    technologies: ['Vue.js', 'VueX', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Modyo'],
-  },
-  {
-    title: 'Consorcio — Simulador RRVV',
-    slug: 'consorcio',
-    images: ['/projects/consorcio-1.png', '/projects/consorcio-2.png', '/projects/consorcio-3.png', '/projects/consorcio-4.png', '/projects/consorcio-5.png', '/projects/consorcio-6.png'],
-    description: {
-      es: 'Desarrollo frontend de simuladores previsionales multi-step para procesos de onboarding financiero, utilizando formularios dinámicos, validaciones y componentes reutilizables. Contribución al desarrollo bajo metodología Scrum y tickets Jira, incluyendo la implementación de eventos de analítica con Amplitude. Proyecto realizado a través de VASS Company.',
-      en: 'Frontend development of multi-step predictive simulators for financial onboarding processes, utilizing dynamic forms, validations, and reusable components. Contribution to development under Scrum methodology and Jira tickets, including the implementation of Amplitude analytics events. Project developed through VASS Company.',
-    },
-    technologies: ['Vue.js', 'VueX', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'APIs REST', 'Amplitude'],
+    technologies: ['Python', 'Django', 'Django REST Framework', 'JWT', 'MySQL', 'Docker', 'React.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
     title: 'Admisión Derecho U. de Chile',
@@ -40,13 +30,23 @@ export const projects: Project[] = [
     liveUrl: 'https://admision.derecho.uchile.cl/'
   },
   {
-    title: 'EchoReviews',
-    slug: 'echoreviews',
-    images: ['/projects/echoreviews-1.png', '/projects/echoreviews-2.png'],
+    title: 'Consorcio — Simulador RRVV',
+    slug: 'consorcio',
+    images: ['/projects/consorcio-1.png', '/projects/consorcio-2.png', '/projects/consorcio-3.png', '/projects/consorcio-4.png', '/projects/consorcio-5.png', '/projects/consorcio-6.png'],
     description: {
-      es: 'Aplicación Full Stack desacoplada para la gestión de reseñas culturales sobre anime, música y videojuegos, desarrollada con una API REST y autenticación JWT.',
-      en: 'Decoupled full stack app for managing cultural reviews on anime, music, and video games, built with a REST API and JWT authentication.',
+      es: 'Desarrollo frontend de simuladores previsionales multi-step para procesos de onboarding financiero, utilizando formularios dinámicos, validaciones y componentes reutilizables. Contribución al desarrollo bajo metodología Scrum y tickets Jira, incluyendo la implementación de eventos de analítica con Amplitude. Proyecto realizado a través de VASS Company.',
+      en: 'Frontend development of multi-step predictive simulators for financial onboarding processes, utilizing dynamic forms, validations, and reusable components. Contribution to development under Scrum methodology and Jira tickets, including the implementation of Amplitude analytics events. Project developed through VASS Company.',
     },
-    technologies: ['Python', 'Django', 'Django REST Framework', 'JWT', 'MySQL', 'Docker', 'React.js'],
+    technologies: ['Vue.js', 'VueX', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'APIs REST', 'Amplitude'],
+  },
+  {
+    title: 'Parque Arauco — Parque Alegra',
+    slug: 'parque-arauco',
+    images: ['/projects/parquearauco-1.png', '/projects/parquearauco-2.png', '/projects/parquearauco-3.png', '/projects/parquearauco-4.png', '/projects/parquearauco-5.png', '/projects/parquearauco-6.png', '/projects/parquearauco-7.png', '/projects/parquearauco-8.png', '/projects/parquearauco-9.png'],
+    description: {
+      es: 'Desarrollo y mantención frontend de múltiples sitios del ecosistema Parque Arauco en Chile y Colombia — incluyendo Parque Alegra, Parque Arboleda y otros — implementando módulos dinámicos, componentes reutilizables para reemplazo de contenido, y administración de contenido mediante Modyo CMS. Contribución realizada como parte del equipo, mediante tickets Jira bajo metodología Scrum, a través de VASS Company.',
+      en: 'Frontend development and maintenance of multiple sites within the Parque Arauco ecosystem in Chile and Colombia — including Parque Alegra, Parque Arboleda, and others — implementing dynamic modules, reusable components for content replacement, and content management through the Modyo CMS. Contribution made as part of the team, through Jira tickets under Scrum methodology, via VASS Company.',
+    },
+    technologies: ['Vue.js', 'VueX', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Modyo'],
   },
 ]

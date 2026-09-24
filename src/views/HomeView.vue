@@ -8,8 +8,8 @@ import { useLanguageStore } from '@/stores/language'
 const languageStore = useLanguageStore()
 
 const heroText = {
-  es: { role: 'Frontend Developer', accent: 'en camino a Full Stack' },
-  en: { role: 'Frontend Developer', accent: 'building towards Full Stack' },
+  es: { role: 'Frontend Developer', accent: 'ampliando hacia Full Stack' },
+  en: { role: 'Frontend Developer', accent: 'expanding into Full Stack' },
 }
 </script>
 
