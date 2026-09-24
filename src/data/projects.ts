@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: 'EchoReviews',
     slug: 'echoreviews',
-    images: ['/projects/echoreviews-1.png', '/projects/echoreviews-2.png'],
+    images: ['/projects/echoreviews-1.png', '/projects/echoreviews-2.jpg', '/projects/echoreviews-3.jpg', '/projects/echoreviews-4.jpg', '/projects/echoreviews-5.jpg', '/projects/echoreviews-6.jpg', '/projects/echoreviews-7.jpg', '/projects/echoreviews-8.png'],
     description: {
       es: 'Aplicación Full Stack desacoplada para reseñas de anime, videojuegos y música de culto —contenido de nicho, pensado para quienes buscan algo más allá del gusto masivo—. Incluye autenticación JWT, un flujo de moderación donde el administrador aprueba o rechaza contenido sin poder editarlo, y una API REST desplegada con Docker Compose (nginx, Django, MySQL).',
       en: 'Decoupled full stack app for cult anime, video game, and music reviews —niche content, for people looking for something beyond mainstream taste—. Includes JWT authentication, a moderation workflow where the admin approves or rejects content without being able to edit it, and a REST API deployed with Docker Compose (nginx, Django, MySQL).',
