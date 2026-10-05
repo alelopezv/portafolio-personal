@@ -17,7 +17,7 @@ const availability = {
                 <a href="https://linkedin.com/in/alelopezv" target="_blank">LinkedIn</a>
                 <a href="https://github.com/alelopezv" target="_blank">GitHub</a>
                 <a href="mailto:ale.lopezv1995@gmail.com">Email</a>
-                <a href="/CV-Alejandro-Lopez.pdf" download>CV</a>
+                <a href="/CV_Alejandro_Lopez_FullStack.pdf" download>CV</a>
             </div>
             <p class="copyright">© 2026 Alejandro López</p>
         </div>
